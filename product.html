@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <link rel="stylesheet" href="product.css">
+ 
+
+
+ <style>
+   
+     
+
+ </style>
+<body>
+    
+<div id="search">
+    <br>
+    
+    <hr>
+   <div id="searchbar"> 
+    <input id="place" placeholder="Going to">
+    <input id="date" type="date" placeholder="">
+    <input id="date" type="date">
+    <input id="travelers" type="text" placeholder="Travelers">
+    <button id="button">search</button>
+   </div>
+    
+</div>
+
+
+
+   
+<div id="upperleft">
+    <div id="map">
+        <a href="https://www.google.com/maps/@23.2981531,81.3509408,15z"> <img id="gmap" src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg" alt=""></a>
+       </div>
+       <div id="maptext">
+           <a id="maptext"  href="https://www.google.com/maps/@23.2981531,81.3509408,15z">View in map</a>
+       </div>
+       <br>
+       <br>
+       <hr>
+       <h2 id="maph2">Search by property name</h2>
+       <input type="text" placeholder="e.g. best western" id="mapinput">
+       <br>
+       <br>
+       <hr>
+       <h2 id="maph2"> Filter by</h2>
+       <p id="mapp">Popular filter</p>
+       <div id="mapcheckbox">
+           <input id="check" type="checkbox">
+           <label>Pousada (Portugal)</label>
+           <input id="check" type="checkbox">
+           <label>Castle</label>
+           <input id="check" type="checkbox">
+           <label>Lunch included</label>
+           <input id="check" type="checkbox">
+           <label>Ryokan</label>
+           <input id="check" type="checkbox">
+           <label>Reserve now, pay later</label>
+
+       </div>
+       <br>
+       <p id="mapp">Star rating</p>
+       <div id="rating">
+           <div>1</div>
+           <div>2</div>
+           <div>3</div>
+           <div>4</div>
+           <div>5</div>
+       </div>
+       <br>
+       <p id="mapp">Your budget</p>
+       <div id="mapcheckbox">
+        <input value="75" id="check" type="checkbox">
+        <label>Less than $75</label>
+        <input value="125" id="check" type="checkbox">
+        <label>$75 to $125</label>
+        <input value="200" id="check" type="checkbox">
+        <label>$125 to $200</label>
+        <input value="300" id="check" type="checkbox">
+        <label>$200 to $300</label>
+        <input value="301" id="check" type="checkbox">
+        <label>Greater than $300</label>
+
+    </div>
+    <br>
+    <p id="mapp">Guest rating</p>
+    <div id="mapcheckbox">
+        <input id="check" type="checkbox">
+        <label>Any</label>
+        <input id="check" type="checkbox">
+        <label>Wonderful 4.5+</label>
+        <input id="check" type="checkbox">
+        <label>Very good 4+</label>
+        <input id="check" type="checkbox">
+        <label>Good 3.5+</label>
+    </div>
+    <br>
+    <p id="mapp">Cleaning and safety practices</p>
+    <div id="mapcheckbox">
+        <input id="check" type="checkbox">
+        <label>Enhanced cleaning
+            <p id="lablep">Properties taking additional steps to clean and sanitize</p>
+        </label>
+     
+    </div>
+    <br>
+    <p id="mapp">Payment type</p>
+    <div id="mapcheckbox">
+        <input id="check" type="checkbox">
+        <label>Payment type</label>
+        <input id="check" type="checkbox">
+        <label>Reserve now, pay later</label>
+        
+    </div>
+    <br>
+    <p id="mapp">Property type</p>
+    <div id="mapcheckbox">
+        <input id="check" type="checkbox">
+        <label>Pousada (Portugal)</label>
+        <input id="check" type="checkbox">
+        <label>Castle</label>
+        <input id="check" type="checkbox">
+        <label>Ryokan+</label>
+        <input id="check" type="checkbox">
+        <label>Hotel resort</label>
+        <input id="check" type="checkbox">
+        <label>Riad</label>
+        <input id="check" type="checkbox">
+        <label>Safari / Tentalow</label>
+        <input id="check" type="checkbox">
+        <label>Capsule Hotel</label>
+        <input id="check" type="checkbox">
+        <label>Motel</label>
+    </div>
+    <br>
+    <p id="mapp">Traveler experience</p>
+    <div id="mapcheckbox">
+        <input id="checkk" type="checkbox">
+        <label>LGBTQ welcoming
+            <p id="lablep">See properties that pledge to make all guests feel safe, welcome, and respected.</p>
+        </label>
+        <input id="checkk" type="checkbox">
+        <label>Business friendly
+            <p id="lablep">See properties with amenities to help you work comfortably, like WiFi and breakfast.</p>
+        </label>
+     
+        <input id="checkk" type="checkbox">
+        <label>Family friendly
+            <p id="lablep">See properties that include family essentials like in-room conveniences and activities for the kids.</p>
+        </label>
+  
+     
+    </div>
+    <br>
+    <p id="mapp">Neighborhood</p>
+    <div id="mapcheckbox">
+     <input id="check" type="checkbox">
+     <label>Nagpur</label>
+     <input id="check" type="checkbox">
+     <label>Sadar</label>
+     <input id="check" type="checkbox">
+     <label>Nandanvan</label>
+     <input id="check" type="checkbox">
+     <label>Ramdaspeth</label>
+     <input id="check" type="checkbox">
+     <label>Dharampeth</label>
+
+ </div>
+ <br>
+ <p id="mapp">Neighborhood</p>
+ <div id="mapcheckbox">
+  <input id="check" type="checkbox">
+  <label>Nagpur</label>
+  <input id="check" type="checkbox">
+  <label>Sadar</label>
+  <input id="check" type="checkbox">
+  <label>Nandanvan</label>
+  <input id="check" type="checkbox">
+  <label>Ramdaspeth</label>
+  <input id="check" type="checkbox">
+  <label>Dharampeth</label>
+
+</div>
+<br>
+<p id="mapp">Popular locations</p>
+<div id="mapcheckbox">
+ <input id="check" type="checkbox">
+ <label>Raman Science Centre</label>
+ <input id="check" type="checkbox">
+ <label>Telankhedi Hanuman Temple</label>
+ <input id="check" type="checkbox">
+ <label>Sitabuldi Fort</label>
+ <input id="check" type="checkbox">
+ <label>Sonegaon Lake</label>
+ <input id="check" type="checkbox">
+ <label>Shukrawari Lake</label>
+ <input id="check" type="checkbox">
+ <label>Gandhi Sagar Lake</label>
+ <input id="check" type="checkbox">
+ <label>Narrow Gauge Rail Museum</label>
+ <input id="check" type="checkbox">
+ <label>Markanda</label>
+ <input id="check" type="checkbox">
+ <label>Japanese Rose Garden</label>
+ <input id="check" type="checkbox">
+ <label>Dhamma Chakra Stupa</label>
+
+</div>
+<br>
+<p id="mapp">Meal plans available</p>
+<div id="mapcheckbox">
+ <input id="check" type="checkbox">
+ <label>Breakfast included</label>
+ <input id="check" type="checkbox">
+ <label>Lunch included</label>
+ <input id="check" type="checkbox">
+ <label>Dinner included</label>
+ <input id="check" type="checkbox">
+ <label>All inclusive</label>
+
+</div>
+<br>
+<p id="mapp">Amenities</p>
+<div id="mapcheckbox">
+ <input id="check" type="checkbox">
+ <label>Electric car charging station</label>
+ <input id="check" type="checkbox">
+ <label>Free airport shuttle</label>
+ <input id="check" type="checkbox">
+ <label>Free WiFit</label>
+ <input id="check" type="checkbox">
+ <label>Washer and dryer</label>
+ <input id="check" type="checkbox">
+ <label>Parking</label>
+ <input id="check" type="checkbox">
+ <label>Pet friendly</label>
+ <input id="check" type="checkbox">
+ <label>Hot tub</label>
+ <input id="check" type="checkbox">
+ <label>Spa</label>
+ <input id="check" type="checkbox">
+ <label>Air conditioned</label>
+ <input id="check" type="checkbox">
+ <label>Casino</label>
+
+</div>
+<br>
+<p id="mapp">Orbitz Rewards</p>
+<div id="mapcheckbox">
+    <input id="check" type="checkbox">
+    <label>VIP Access properties
+        <p id="lablep">Top-rated stays with member perks.</p>
+    </label>
+    
+</div>
+<br>
+<p id="mapp">Accessibility</p>
+<div id="mapcheckbox">
+ <input id="check" type="checkbox">
+ <label>Elevator</label>
+ <input id="check" type="checkbox">
+ <label>Accessible bathroom</label>
+ <input id="check" type="checkbox">
+ <label>Roll-in shower</label>
+ <input id="check" type="checkbox">
+ <label>In-room accessibility</label>
+ <input id="check" type="checkbox">
+ <label>Service animals allowed</label>
+ <input id="check" type="checkbox">
+ <label>Stair-free path to entrance</label>
+ <input id="check" type="checkbox">
+ <label>Sign language-capable staff</label>
+
+
+</div>
+
+
+
+</div>
+
+    <div id="body">
+        
+<div >
+    <div id="container">
+        <div id="left">
+            <img src="https://images.trvl-media.com/hotels/2000000/1870000/1862600/1862585/f8ccf2a5.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+        </div>
+        <div id="right">
+            <h2>Le Maridian Nagpur</h2>
+            <p>Nagpur</p>
+            <p1>Up to 10% Off Prepay and Save. Book now</p1>
+         <div id="div1">
+            <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+            <p>we have 5 left</p>
+        </div>
+        <div id="div2">
+            <p>Fully refundable book now</p>
+            <h2>122$</h2>
+        </div>
+    </div> 
+    </div>
+
+ <div > 
+ <div id="container">
+    <div id="left">
+        <img src=" https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/80859cbb.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+    </div>
+    <div id="right">
+        <h2>The Oberoi Mumbai Nariman Point </h2>
+        <p>mumbai</p>
+        <p1>Up to 10% Off Prepay and Save. Book now</p1>
+     <div id="div1">
+        <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+        <p>we have 4 left</p>
+    </div>
+    <div id="div2">
+        <p>Fully refundable Reserve now, pay later </p>
+        <h2>122$</h2>
+    </div>
+</div>
+</div>
+
+    <div >
+        <div id="container">
+            <div id="left">
+                <img src=" https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/b0db84f8.jpg?" alt="">
+            </div>
+            <div id="right">
+                <h2>DoubleTree by Hilton Goa-Panaji Chimbel </h2>
+                <p>goa</p>
+                <p1>Up to 10% Off Prepay and Save. Book now</p1>
+             <div id="div1">
+                <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                <p>we have 5 left</p>
+            </div>
+            <div id="div2">
+                <p>Fully refundable book now</p>
+                <h2>241$</h2>
+            </div>
+        </div>
+        </div>
+
+        <div >
+            <div id="container">
+                <div id="left">
+                    <img src=" https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/460fe046.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                </div>
+                <div id="right">
+                    <h2> Taj Exotica Resort & Spa, Goa</h2>
+                    <p>goa</p>
+                    <p1>Up to 18% Off Prepay and Save. Book now</p1>
+                 <div id="div1">
+                    <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                    <p>we have 5 left</p>
+                </div>
+                <div id="div2">
+                    <p>Fully refundable book now</p>
+                    <h2>271$</h2>
+                </div>
+            </div>
+            </div>
+
+            <div >
+                <div id="container">
+                    <div id="left">
+                        <img src=" https://images.trvl-media.com/hotels/25000000/24060000/24057300/24057290/60a40f17.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                    </div>
+                    <div id="right">
+                        <h2>The leela goa </h2>
+                        <p>goa</p>
+                        <p1>Up to 15% Off Prepay and Save. Book now</p1>
+                     <div id="div1">
+                        <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                        <p>we have 5 left</p>
+                    </div>
+                    <div id="div2">
+                        <p>Fully refundable book now</p>
+                        <h2>241$</h2>
+                    </div>
+                </div>
+                </div>
+
+                <div >
+                    <div id="container">
+                        <div id="left">
+                            <img src="https://images.trvl-media.com/hotels/25000000/24060000/24057300/24057290/1860bf90.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                        </div>
+                        <div id="right">
+                            <h2>W Goa Chapora  </h2>
+                            <p>goa</p>
+                            <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                         <div id="div1">
+                            <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more </p2>
+                            <p>we have 5 left</p>
+                        </div>
+                        <div id="div2">
+                            <p>Fully refundable book now</p>
+                            <h2>281$</h2>
+                        </div>
+                    </div>
+                </div>
+
+                    <div >
+                        <div id="container">
+                            <div id="left">
+                                <img src="https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/a7678da8.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                            </div>
+                            <div id="right">
+                                <h2>The Taj Mahal Palace Mumbai</h2>
+                                <p>mumbai</p>
+                                <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                             <div id="div1">
+                                <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                <p>we have 4 left</p>
+                            </div>
+                            <div id="div2">
+                                <p>Fully refundable Reserve now, pay later </p>
+                                <h2>122$</h2>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div>
+                        <div id="container">
+                            <div id="left">
+                                <img src="https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/1db78232.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                            </div>
+                            <div id="right">
+                                <h2>The St. Regis Mumbai Mumbai </h2>
+                                <p>banglore</p>
+                                <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                             <div id="div1">
+                                <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                <p>we have 4 left</p>
+                            </div>
+                            <div id="div2">
+                                <p>Fully refundable Reserve now, pay later </p>
+                                <h2>122$</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                    <div id="container">
+                        <div id="left">
+                            <img src=" https://images.trvl-media.com/hotels/34000000/33320000/33316400/33316361/ce95a28d.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                        </div>
+                        <div id="right">
+                            <h2>The St. Regis Mumbai Mumbai </h2>
+                            <p>banglore</p>
+                            <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                         <div id="div1">
+                            <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                            <p>we have 4 left</p>
+                        </div>
+                        <div id="div2">
+                            <p>Fully refundable Reserve now, pay later </p>
+                            <h2>122$</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                <div id="container">
+                    <div id="left">
+                        <img src=" https://images.trvl-media.com/hotels/2000000/1870000/1862600/1862585/390ebbd5.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                    </div>
+                    <div id="right">
+                        <h2>The St. Regis Mumbai Mumbai </h2>
+                        <p>nagpur</p>
+                        <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                     <div id="div1">
+                        <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                        <p>we have 4 left</p>
+                    </div>
+                    <div id="div2">
+                        <p>Fully refundable Reserve now, pay later </p>
+                        <h2>122$</h2>
+                    </div>
+                </div>
+            </div>
+                        
+            <div>
+            <div id="container">
+                <div id="left">
+                    <img src=" https://images.trvl-media.com/hotels/2000000/1870000/1862600/1862585/be587c93.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                </div>
+                <div id="right">
+                    <h2>The St. Regis Mumbai Mumbai </h2>
+                    <p>nagpur</p>
+                    <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                 <div id="div1">
+                    <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                    <p>we have 4 left</p>
+                </div>
+                <div id="div2">
+                    <p>Fully refundable Reserve now, pay later </p>
+                    <h2>122$</h2>
+                </div>
+            </div> 
+        </div>
+
+        <div>
+            <div id="container">
+                <div id="left">
+                    <img src=" https://images.trvl-media.com/hotels/34000000/33320000/33316400/33316361/ce95a28d.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                </div>
+                <div id="right">
+                    <h2>The St. Regis Mumbai Mumbai </h2>
+                    <p>banglore</p>
+                    <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                 <div id="div1">
+                    <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                    <p>we have 4 left</p>
+                </div>
+                <div id="div2">
+                    <p>Fully refundable Reserve now, pay later </p>
+                    <h2>122$</h2>
+                </div>
+            </div>
+        </div>
+       
+        <div > 
+            <div id="container">
+               <div id="left">
+                   <img src=" https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/80859cbb.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+               </div>
+               <div id="right">
+                   <h2>The Oberoi Mumbai Nariman Point </h2>
+                   <p>mumbai</p>
+                   <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                <div id="div1">
+                   <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                   <p>we have 4 left</p>
+               </div>
+               <div id="div2">
+                   <p>Fully refundable Reserve now, pay later </p>
+                   <h2>122$</h2>
+               </div>
+           </div>
+           </div>
+           
+               <div >
+                   <div id="container">
+                       <div id="left">
+                           <img src=" https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/b0db84f8.jpg?" alt="">
+                       </div>
+                       <div id="right">
+                           <h2>DoubleTree by Hilton Goa-Panaji Chimbel </h2>
+                           <p>goa</p>
+                           <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                        <div id="div1">
+                           <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                           <p>we have 5 left</p>
+                       </div>
+                       <div id="div2">
+                           <p>Fully refundable book now</p>
+                           <h2>241$</h2>
+                       </div>
+                   </div>
+                   </div>
+           
+                   <div >
+                       <div id="container">
+                           <div id="left">
+                               <img src=" https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/460fe046.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                           </div>
+                           <div id="right">
+                               <h2> Taj Exotica Resort & Spa, Goa</h2>
+                               <p>goa</p>
+                               <p1>Up to 18% Off Prepay and Save. Book now</p1>
+                            <div id="div1">
+                               <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                               <p>we have 5 left</p>
+                           </div>
+                           <div id="div2">
+                               <p>Fully refundable book now</p>
+                               <h2>271$</h2>
+                           </div>
+                       </div>
+                       </div>
+           
+                       <div >
+                           <div id="container">
+                               <div id="left">
+                                   <img src=" https://images.trvl-media.com/hotels/25000000/24060000/24057300/24057290/60a40f17.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                               </div>
+                               <div id="right">
+                                   <h2>The leela goa </h2>
+                                   <p>goa</p>
+                                   <p1>Up to 15% Off Prepay and Save. Book now</p1>
+                                <div id="div1">
+                                   <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                                   <p>we have 5 left</p>
+                               </div>
+                               <div id="div2">
+                                   <p>Fully refundable book now</p>
+                                   <h2>241$</h2>
+                               </div>
+                           </div>
+                           </div>
+           
+                           <div >
+                               <div id="container">
+                                   <div id="left">
+                                       <img src="https://images.trvl-media.com/hotels/25000000/24060000/24057300/24057290/1860bf90.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                   </div>
+                                   <div id="right">
+                                       <h2>W Goa Chapora  </h2>
+                                       <p>goa</p>
+                                       <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                    <div id="div1">
+                                       <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more </p2>
+                                       <p>we have 5 left</p>
+                                   </div>
+                                   <div id="div2">
+                                       <p>Fully refundable book now</p>
+                                       <h2>281$</h2>
+                                   </div>
+                               </div>
+                           </div>
+           
+                               <div >
+                                   <div id="container">
+                                       <div id="left">
+                                           <img src="https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/a7678da8.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                       </div>
+                                       <div id="right">
+                                           <h2>The Taj Mahal Palace Mumbai</h2>
+                                           <p>mumbai</p>
+                                           <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                        <div id="div1">
+                                           <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                           <p>we have 4 left</p>
+                                       </div>
+                                       <div id="div2">
+                                           <p>Fully refundable Reserve now, pay later </p>
+                                           <h2>122$</h2>
+                                       </div>
+                                   </div>
+                                   </div>
+           
+                                   <div>
+                                   <div id="container">
+                                       <div id="left">
+                                           <img src="https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/1db78232.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                       </div>
+                                       <div id="right">
+                                           <h2>The St. Regis Mumbai Mumbai </h2>
+                                           <p>banglore</p>
+                                           <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                        <div id="div1">
+                                           <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                           <p>we have 4 left</p>
+                                       </div>
+                                       <div id="div2">
+                                           <p>Fully refundable Reserve now, pay later </p>
+                                           <h2>122$</h2>
+                                       </div>
+                                   </div>
+                               </div>
+           
+                               <div>
+                               <div id="container">
+                                   <div id="left">
+                                       <img src=" https://images.trvl-media.com/hotels/34000000/33320000/33316400/33316361/ce95a28d.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                   </div>
+                                   <div id="right">
+                                       <h2>The St. Regis Mumbai Mumbai </h2>
+                                       <p>banglore</p>
+                                       <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                    <div id="div1">
+                                       <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                       <p>we have 4 left</p>
+                                   </div>
+                                   <div id="div2">
+                                       <p>Fully refundable Reserve now, pay later </p>
+                                       <h2>122$</h2>
+                                   </div>
+                               </div>
+                           </div>
+           
+                           <div>
+                           <div id="container">
+                               <div id="left">
+                                   <img src=" https://images.trvl-media.com/hotels/2000000/1870000/1862600/1862585/390ebbd5.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                               </div>
+                               <div id="right">
+                                   <h2>The St. Regis Mumbai Mumbai </h2>
+                                   <p>nagpur</p>
+                                   <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                <div id="div1">
+                                   <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                   <p>we have 4 left</p>
+                               </div>
+                               <div id="div2">
+                                   <p>Fully refundable Reserve now, pay later </p>
+                                   <h2>122$</h2>
+                               </div>
+                           </div>
+                       </div>
+                                   
+                       <div>
+                       <div id="container">
+                           <div id="left">
+                               <img src=" https://images.trvl-media.com/hotels/2000000/1870000/1862600/1862585/be587c93.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                           </div>
+                           <div id="right">
+                               <h2>The St. Regis Mumbai Mumbai </h2>
+                               <p>nagpur</p>
+                               <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                            <div id="div1">
+                               <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                               <p>we have 4 left</p>
+                           </div>
+                           <div id="div2">
+                               <p>Fully refundable Reserve now, pay later </p>
+                               <h2>122$</h2>
+                           </div>
+                       </div> 
+                   </div>
+           
+                   <div>
+                       <div id="container">
+                           <div id="left">
+                               <img src=" https://images.trvl-media.com/hotels/34000000/33320000/33316400/33316361/ce95a28d.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                           </div>
+                           <div id="right">
+                               <h2>The St. Regis Mumbai Mumbai </h2>
+                               <p>banglore</p>
+                               <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                            <div id="div1">
+                               <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                               <p>we have 4 left</p>
+                           </div>
+                           <div id="div2">
+                               <p>Fully refundable Reserve now, pay later </p>
+                               <h2>122$</h2>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div > 
+                    <div id="container">
+                       <div id="left">
+                           <img src=" https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/80859cbb.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                       </div>
+                       <div id="right">
+                           <h2>The Oberoi Mumbai Nariman Point </h2>
+                           <p>mumbai</p>
+                           <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                        <div id="div1">
+                           <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                           <p>we have 4 left</p>
+                       </div>
+                       <div id="div2">
+                           <p>Fully refundable Reserve now, pay later </p>
+                           <h2>122$</h2>
+                       </div>
+                   </div>
+                   </div>
+                   
+                       <div >
+                           <div id="container">
+                               <div id="left">
+                                   <img src=" https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/b0db84f8.jpg?" alt="">
+                               </div>
+                               <div id="right">
+                                   <h2>DoubleTree by Hilton Goa-Panaji Chimbel </h2>
+                                   <p>goa</p>
+                                   <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                <div id="div1">
+                                   <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                                   <p>we have 5 left</p>
+                               </div>
+                               <div id="div2">
+                                   <p>Fully refundable book now</p>
+                                   <h2>241$</h2>
+                               </div>
+                           </div>
+                           </div>
+                   
+                           <div >
+                               <div id="container">
+                                   <div id="left">
+                                       <img src=" https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/460fe046.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                   </div>
+                                   <div id="right">
+                                       <h2> Taj Exotica Resort & Spa, Goa</h2>
+                                       <p>goa</p>
+                                       <p1>Up to 18% Off Prepay and Save. Book now</p1>
+                                    <div id="div1">
+                                       <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                                       <p>we have 5 left</p>
+                                   </div>
+                                   <div id="div2">
+                                       <p>Fully refundable book now</p>
+                                       <h2>271$</h2>
+                                   </div>
+                               </div>
+                               </div>
+                   
+                               <div >
+                                   <div id="container">
+                                       <div id="left">
+                                           <img src=" https://images.trvl-media.com/hotels/25000000/24060000/24057300/24057290/60a40f17.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                       </div>
+                                       <div id="right">
+                                           <h2>The leela goa </h2>
+                                           <p>goa</p>
+                                           <p1>Up to 15% Off Prepay and Save. Book now</p1>
+                                        <div id="div1">
+                                           <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                                           <p>we have 5 left</p>
+                                       </div>
+                                       <div id="div2">
+                                           <p>Fully refundable book now</p>
+                                           <h2>241$</h2>
+                                       </div>
+                                   </div>
+                                   </div>
+                   
+                                   <div >
+                                       <div id="container">
+                                           <div id="left">
+                                               <img src="https://images.trvl-media.com/hotels/25000000/24060000/24057300/24057290/1860bf90.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                           </div>
+                                           <div id="right">
+                                               <h2>W Goa Chapora  </h2>
+                                               <p>goa</p>
+                                               <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                            <div id="div1">
+                                               <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more </p2>
+                                               <p>we have 5 left</p>
+                                           </div>
+                                           <div id="div2">
+                                               <p>Fully refundable book now</p>
+                                               <h2>281$</h2>
+                                           </div>
+                                       </div>
+                                   </div>
+                   
+                                       <div >
+                                           <div id="container">
+                                               <div id="left">
+                                                   <img src="https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/a7678da8.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                               </div>
+                                               <div id="right">
+                                                   <h2>The Taj Mahal Palace Mumbai</h2>
+                                                   <p>mumbai</p>
+                                                   <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                                <div id="div1">
+                                                   <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                                   <p>we have 4 left</p>
+                                               </div>
+                                               <div id="div2">
+                                                   <p>Fully refundable Reserve now, pay later </p>
+                                                   <h2>122$</h2>
+                                               </div>
+                                           </div>
+                                           </div>
+                   
+                                           <div>
+                                           <div id="container">
+                                               <div id="left">
+                                                   <img src="https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/1db78232.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                               </div>
+                                               <div id="right">
+                                                   <h2>The St. Regis Mumbai Mumbai </h2>
+                                                   <p>banglore</p>
+                                                   <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                                <div id="div1">
+                                                   <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                                   <p>we have 4 left</p>
+                                               </div>
+                                               <div id="div2">
+                                                   <p>Fully refundable Reserve now, pay later </p>
+                                                   <h2>122$</h2>
+                                               </div>
+                                           </div>
+                                       </div>
+                   
+                                       <div>
+                                       <div id="container">
+                                           <div id="left">
+                                               <img src=" https://images.trvl-media.com/hotels/34000000/33320000/33316400/33316361/ce95a28d.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                           </div>
+                                           <div id="right">
+                                               <h2>The St. Regis Mumbai Mumbai </h2>
+                                               <p>banglore</p>
+                                               <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                            <div id="div1">
+                                               <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                               <p>we have 4 left</p>
+                                           </div>
+                                           <div id="div2">
+                                               <p>Fully refundable Reserve now, pay later </p>
+                                               <h2>122$</h2>
+                                           </div>
+                                       </div>
+                                   </div>
+                   
+                                   <div>
+                                   <div id="container">
+                                       <div id="left">
+                                           <img src=" https://images.trvl-media.com/hotels/2000000/1870000/1862600/1862585/390ebbd5.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                       </div>
+                                       <div id="right">
+                                           <h2>The St. Regis Mumbai Mumbai </h2>
+                                           <p>nagpur</p>
+                                           <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                        <div id="div1">
+                                           <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                           <p>we have 4 left</p>
+                                       </div>
+                                       <div id="div2">
+                                           <p>Fully refundable Reserve now, pay later </p>
+                                           <h2>122$</h2>
+                                       </div>
+                                   </div>
+                               </div>
+                                           
+                               <div>
+                               <div id="container">
+                                   <div id="left">
+                                       <img src=" https://images.trvl-media.com/hotels/2000000/1870000/1862600/1862585/be587c93.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                   </div>
+                                   <div id="right">
+                                       <h2>The St. Regis Mumbai Mumbai </h2>
+                                       <p>nagpur</p>
+                                       <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                    <div id="div1">
+                                       <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                       <p>we have 4 left</p>
+                                   </div>
+                                   <div id="div2">
+                                       <p>Fully refundable Reserve now, pay later </p>
+                                       <h2>122$</h2>
+                                   </div>
+                               </div> 
+                           </div>
+                   
+                           <div>
+                               <div id="container">
+                                   <div id="left">
+                                       <img src=" https://images.trvl-media.com/hotels/34000000/33320000/33316400/33316361/ce95a28d.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                                   </div>
+                                   <div id="right">
+                                       <h2>The St. Regis Mumbai Mumbai </h2>
+                                       <p>banglore</p>
+                                       <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                                    <div id="div1">
+                                       <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+                                       <p>we have 4 left</p>
+                                   </div>
+                                   <div id="div2">
+                                       <p>Fully refundable Reserve now, pay later </p>
+                                       <h2>122$</h2>
+                                   </div>
+                               </div>
+                           </div>
+
+                            <div > 
+ <div id="container">
+    <div id="left">
+        <img src=" https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/80859cbb.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+    </div>
+    <div id="right">
+        <h2>The Oberoi Mumbai Nariman Point </h2>
+        <p>mumbai</p>
+        <p1>Up to 10% Off Prepay and Save. Book now</p1>
+     <div id="div1">
+        <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more  </p2>
+        <p>we have 4 left</p>
+    </div>
+    <div id="div2">
+        <p>Fully refundable Reserve now, pay later </p>
+        <h2>122$</h2>
+    </div>
+</div>
+</div>
+
+    <div >
+        <div id="container">
+            <div id="left">
+                <img src=" https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/b0db84f8.jpg?" alt="">
+            </div>
+            <div id="right">
+                <h2>DoubleTree by Hilton Goa-Panaji Chimbel </h2>
+                <p>goa</p>
+                <p1>Up to 10% Off Prepay and Save. Book now</p1>
+             <div id="div1">
+                <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                <p>we have 5 left</p>
+            </div>
+            <div id="div2">
+                <p>Fully refundable book now</p>
+                <h2>241$</h2>
+            </div>
+        </div>
+        </div>
+
+        <div >
+            <div id="container">
+                <div id="left">
+                    <img src=" https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/460fe046.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                </div>
+                <div id="right">
+                    <h2> Taj Exotica Resort & Spa, Goa</h2>
+                    <p>goa</p>
+                    <p1>Up to 18% Off Prepay and Save. Book now</p1>
+                 <div id="div1">
+                    <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                    <p>we have 5 left</p>
+                </div>
+                <div id="div2">
+                    <p>Fully refundable book now</p>
+                    <h2>271$</h2>
+                </div>
+            </div>
+            </div>
+
+            <div >
+                <div id="container">
+                    <div id="left">
+                        <img src=" https://images.trvl-media.com/hotels/25000000/24060000/24057300/24057290/60a40f17.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                    </div>
+                    <div id="right">
+                        <h2>The leela goa </h2>
+                        <p>goa</p>
+                        <p1>Up to 15% Off Prepay and Save. Book now</p1>
+                     <div id="div1">
+                        <p2>Full prepayment upon booking. Free changes and cancellations up to 72 hours before arrival.  </p2>
+                        <p>we have 5 left</p>
+                    </div>
+                    <div id="div2">
+                        <p>Fully refundable book now</p>
+                        <h2>241$</h2>
+                    </div>
+                </div>
+                </div>
+
+                <div >
+                    <div id="container">
+                        <div id="left">
+                            <img src="https://images.trvl-media.com/hotels/25000000/24060000/24057300/24057290/1860bf90.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium" alt="">
+                        </div>
+                        <div id="right">
+                            <h2>W Goa Chapora  </h2>
+                            <p>goa</p>
+                            <p1>Up to 10% Off Prepay and Save. Book now</p1>
+                         <div id="div1">
+                            <p2>Perfect Staycation Enjoy your stay inclusive of breakfast, one major meal, shared airport transfers, one Goan Masterclass and more </p2>
+                            <p>we have 5 left</p>
+                        </div>
+                        <div id="div2">
+                            <p>Fully refundable book now</p>
+                            <h2>281$</h2>
+                        </div>
+                    </div>
+                </div>
+
+                   
+            
+
+ 
+
+
+    
+
+
+
+
+
+</body>
+</html>
+
+<script src="product.js"></script>
+    
+
+    
+
+
