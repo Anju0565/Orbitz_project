@@ -1,0 +1,346 @@
+
+
+body {
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+}
+
+/* p{
+  color:#616161;
+  font-size:14.875px;
+} */
+
+#main {
+  width: 85%;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+#home{
+  height: 550px;
+  width: 100%;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#navbar{
+  height: 100px;
+  width: 100%;
+  font-size: large;
+  display: flex;
+  background-color: #00253c;
+  font-size: 15px;
+  color: white;
+}
+#left, #right{
+  display:flex;
+  justify-content: space-around;
+}
+
+#left{
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+#right{
+  margin: auto;
+  padding-left: 80px;
+}
+
+#left > div{
+  width: 40%;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+#left >div >img{
+  padding-right: 40px;
+}
+#right > div{
+  width: 40%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* NavBar styling Ends here */
+
+/* seaching start */
+
+#searching_bar{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  min-height: 250px;
+  width: 85%;
+  margin: auto;
+  margin-top: 2%;
+  background-color: ivory;
+}
+#searching_Nav{
+  height: auto;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  padding: 2%;
+}
+#searching_Nav+hr{
+  width: 90%;
+}
+#search_bar{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  padding: 1%;
+}
+#search_bar > div{
+  margin-left: 4%;
+}
+#checkbox{  
+  width: 32%;
+  display: flex;
+  margin-left: 9%;
+  align-items: center;
+  padding: 1%;
+}
+#search_btn{
+  width: 15%;
+  padding: 12px;
+  margin-left: 45%;
+  margin-bottom: 5%;
+  background-color: crimson;
+  color: white;
+  border: none;
+}
+
+/* searching ends */
+
+#add1 {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: repeat(1,315px);
+  justify-content: space-between;
+  line-height: 15px;
+  /* border: 1px solid red; */
+}
+
+.pic1,.pic2,.pic3{
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-color: white;
+}
+
+h3,p{
+  padding-left: 10px;
+}
+
+#add2 {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: 200px;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+#add3 {
+  margin: auto;
+  display: grid;
+  line-height: 18px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 285px;
+  grid-gap: 15px;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  /* background-color: #ffffff; */
+}
+
+.leftbox {
+  line-height: 6px;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-color: #ffffff;
+  
+}
+
+.leftbox>img{
+  height: 78%;  
+}
+
+
+/* .left-side2 {
+  height: 30%;
+  width: 100%;
+  /* border: 1px solid red; */
+  /* background-color: #ffffff; */
+} */
+
+
+.rightbox{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2,100px);
+  grid-gap: 150px;
+
+  
+}
+
+
+.right-side1>div>img{
+  height: 100%;
+  width: 90%;
+}
+
+.right-side1{
+  height: 100%;
+  width: 95%;
+  display: flex;
+  /* border: 1px solid red; */
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.right-side1>div>img{
+  width: 130px;
+}
+
+.right-side2>div>img{
+  width: 130px;
+}
+
+.right-side2 {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  background-color: #ffffff;
+}
+
+#add4 {
+  height: 310px;
+  width: 100%;
+  background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2020/09/28/desktop.jpg);
+  background-size: cover;
+  background-position: 0%;
+  color: white;
+
+}
+
+#add4 > h3 {
+  font-weight: bolder;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+#add5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 120px;
+  /* border: 1px solid red; */
+  /* padding-left: 10px; */
+  grid-gap: 15px;
+  justify-content: space-between;
+}
+
+.word1,
+.word2,
+.word3 {
+  display: flex;
+  /* border: 1px solid black; */
+  background-color: white;
+}
+
+.img1,
+.img2,
+.img3 {
+  margin-top: 5%;
+  padding-right: 20px;
+}
+
+.text1,
+.text2,
+.text3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Traveling Box Starts Here */
+#traveling_tips {
+  margin: auto;
+  /* margin: 3%; */
+  height: 250px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100%;
+  grid-gap: 3%;
+  justify-content: space-between;
+}
+#traveling_box1 {
+  width: 99%;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg");
+}
+#traveling_box2 {
+  width: 99%;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg");
+}
+#traveling_box1,
+#traveling_box2 {
+  justify-content: space-between;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(240, 236, 236);
+}
+button {
+  width: 20%;
+  padding: 1%;
+  color: #00253c;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+h2{
+  margin-left: 10px;
+}
+
+#explore {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(1,370px);
+  grid-gap: 10px;
+  /* border: 1px solid red; */
+}
+h2 {
+  font-size: 20px;
+}
+#explore > div {
+  font-size: 12px;
+  color: #00253c;
+}
+
+#explore>div>p{
+  	
+color:#007e8f;
+line-height: 15px;
+}
+
+/* Footer styling starts here */
+footer {
+  height: 120px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+}
+/* Footer styling ends here */

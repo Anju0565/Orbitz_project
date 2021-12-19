@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6f75fa279e.js" crossorigin="anonymous"></script>
+    <style>
+        #container{
+            width: 1200px;
+            /* border: 1px solid red; */
+            margin: auto;
+            
+        }
+
+        #room{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 830px 830px;
+            grid-gap: 20px;
+            /* border: 1px solid red; */
+        }
+
+        #btn1,#btn2,.fa-chevron-right,.fa-chevron-down{
+            width: 90px;
+            height: 30px;
+            color: #007e8f;
+            border: none;
+            font-size: 14.875px;
+            background-color: white;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        #btn3{
+            background-color: #cf4b6d;
+            font-size: 17px;
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            border: transparent;
+            width: 100px;
+        }
+
+        #box1>div>img{
+            height: 100px;
+        }
+
+        .fa-chevron-right,.fa-chevron-down{
+            font-size: 14.875px;
+
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6{
+            line-height: 1px;
+            border: 1px solid rgba(209, 199, 205, 0.555);
+            
+        }
+
+        .box-a{
+            margin-top: 20px;
+        }
+
+        .box-b{
+            margin-top: 50px;
+        }
+
+        .box-c{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+
+        .box-b>div>p{
+            margin-left: 10px;
+            font-family: sans-serif;
+            font-size:10.625px
+            
+        }
+
+        .box-b>div>p:nth-child(2){
+            font-weight: bolder;
+        }
+        h3{margin-left: 10px;
+            font-family: sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        h2{
+            margin-top: 10px;
+            margin-left: 10px;
+            font-family: sans-serif;
+            font-size:23.375px
+        }
+
+        .a,.b,.c,.d,.e,.f,.g,.h,.i{
+            color: #757479;
+            display: flex;
+            /* border: 1px solid red; */
+            margin-left: 10px;
+            font-family: sans-serif;
+            font-size: 14.875px;
+            font-weight: 400
+
+        }
+        
+        .fa,.fas,.fa-bed,.fa-wifi,.fa-coffee,.fa-check{
+            padding-top: 10px;
+            margin-right: 10px;
+            font-size: 14.875px
+        }
+
+        .fa-info-circle{
+            color: #138649;
+            margin-left: 5px;
+        }
+
+        .i{
+            color: #138649;
+        }
+
+        .date{
+            color:#757479;
+            margin-left: 10px;
+            font-family:  sans-serif;
+            font-size: 12.75px;
+            font-weight: 400
+            
+        }
+
+        /* model styling starts */
+        *{
+            box-sizing: border-box;
+        }
+
+        .model_container{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <h1>Choose your room</h1>
+        <input type="search" name="" id="">
+        <div>
+
+        </div>
+
+
+        <div id="room">
+            <div class="box1">
+                <div>
+                    <img width="100%" height="100%"
+                    src=" https://images.trvl-media.com/hotels/1000000/470000/465100/465005/815cb962.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt="">
+                </div>
+                <h3>Presidential Suite, 1 king bed</h3><br>
+                <div class="a">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>485 sq ft</p>
+                </div>
+                <div class="b">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>City view</p>
+                </div>
+                <div class="c">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <p>Sleeps 3</p>
+                </div>
+                <div class="d">
+                    <div>
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <p>1 king bed</p>
+                </div>
+                <div class="e">
+                    <div>
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <p>Free Wifi</p>
+                </div>
+                <div class="f">
+                    <div>
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <p>Breakfast buffet</p>
+                </div>
+                <div class="g">
+                    <div>
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <p>Free Self parking</p>
+                </div>
+                <div class="h">
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Reserve now, pay deposit</p>
+                </div><br>
+                
+                <div class="box-a">
+                    <div class="i">
+                        <p>Fully refundable</p>
+                        <div>
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <p class="date">Before Mon, Dec 27</p>
+                    <div class="j">
+                        <input type="button" value="More details " id="btn1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="box-b">
+                    <h2>$490</h2>
+                    <div>
+                    <p>per night</p>
+                    <p>$620 total</p><br>
+                    <p>includes taxes and fees</p>
+                    </div>
+                </div>
+                
+                <div class="box-c">
+                    <div>
+                        <input type="button" value="Price details" id="btn2">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <input type="button" value="Reserve" id="btn3">
+                </div>
+            </div>
+
+            <!-- box2 starts -->
+
+            <div class="box2">
+                <div>
+                    <img width="100%" height="100%"
+                    src="https://images.trvl-media.com/hotels/1000000/470000/465100/465005/1bb91e1b.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt="">
+                </div>
+                <h3>Deluxe Room, 2 Twin Beds</h3><br>
+                <div class="a">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>323 sq ft</p>
+                </div>
+                <div class="b">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>City view</p>
+                </div>
+                <div class="c">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <p>Sleeps 3</p>
+                </div>
+                <div class="d">
+                    <div>
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <p>2 twin Beds</p>
+                </div>
+                <div class="e">
+                    <div>
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <p>Free Wifi</p>
+                </div>
+                <div class="f">
+                    <div>
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <p>Breakfast buffet</p>
+                </div>
+                <div class="g">
+                    <div>
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <p>Free Self parking</p>
+                </div>
+                <div class="h">
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Reserve now, pay deposit</p>
+                </div><br>
+                
+                <div class="box-a">
+                    <div class="i">
+                        <p>Fully refundable</p>
+                        <div>
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <p class="date">Before Mon, Dec 27</p>
+                    <div class="j">
+                        <input type="button" value="More details " id="btn1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="box-b">
+                    <h2>$260</h2>
+                    <div>
+                    <p>per night</p>
+                    <p>$306 total</p><br>
+                    <p>includes taxes and fees</p>
+                    </div>
+                </div>
+                
+                <div class="box-c">
+                    <div>
+                        <input type="button" value="Price details" id="btn2">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <input type="button" value="Reserve" id="btn3">
+                </div>
+            </div>
+
+            <!-- box3 starts -->
+
+            <div class="box3">
+                <div>
+                    <img width="100%" height="100%"
+                    src="https://images.trvl-media.com/hotels/1000000/470000/465100/465005/99e9c150.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt="">
+                </div>
+                <h3>Luxury Room, 1 King Bed</h3><br>
+                <div class="a">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>323 sq ft</p>
+                </div>
+                <div class="b">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>City view</p>
+                </div>
+                <div class="c">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <p>Sleeps 3</p>
+                </div>
+                <div class="d">
+                    <div>
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <p>1 King Bed</p>
+                </div>
+                <div class="e">
+                    <div>
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <p>Free Wifi</p>
+                </div>
+                <div class="f">
+                    <div>
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <p>Breakfast buffet</p>
+                </div>
+                <div class="g">
+                    <div>
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <p>Free Self parking</p>
+                </div>
+                <div class="h">
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Reserve now, pay deposit</p>
+                </div><br>
+                
+                <div class="box-a">
+                    <div class="i">
+                        <p>Fully refundable</p>
+                        <div>
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <p class="date">Before Mon, Dec 27</p>
+                    <div class="j">
+                        <input type="button" value="More details " id="btn1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="box-b">
+                    <h2>$216</h2>
+                    <div>
+                    <p>per night</p>
+                    <p>$255 total</p><br>
+                    <p>includes taxes and fees</p>
+                    </div>
+                </div>
+                
+                <div class="box-c">
+                    <div>
+                        <input type="button" value="Price details" id="btn2">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <input type="button" value="Reserve" id="btn3">
+                </div>
+            </div>
+
+            <!-- box4 starts -->
+
+            <div class="box4">
+                <div>
+                    <img width="100%" height="100%"
+                    src="https://images.trvl-media.com/hotels/1000000/470000/465100/465005/58e7c139.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt="">
+                </div>
+                <h3>Luxury Suite, 1 way transfer, lounge</h3><br>
+                <div class="a">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>323 sq ft</p>
+                </div>
+                <div class="b">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>City view</p>
+                </div>
+                <div class="c">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <p>Sleeps 3</p>
+                </div>
+                <div class="d">
+                    <div>
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <p>1 king bed</p>
+                </div>
+                <div class="e">
+                    <div>
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <p>Free Wifi</p>
+                </div>
+                <div class="f">
+                    <div>
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <p>Breakfast buffet</p>
+                </div>
+                <div class="g">
+                    <div>
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <p>Free Self parking</p>
+                </div>
+                <div class="h">
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Reserve now, pay deposit</p>
+                </div><br>
+                
+                <div class="box-a">
+                    <div class="i">
+                        <p>Fully refundable</p>
+                        <div>
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <p class="date">Before Mon, Dec 27</p>
+                    <div class="j">
+                        <input type="button" value="More details " id="btn1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="box-b">
+                    <h2>$790</h2>
+                    <div>
+                    <p>per night</p>
+                    <p>$938 total</p><br>
+                    <p>includes taxes and fees</p>
+                    </div>
+                </div>
+                
+                <div class="box-c">
+                    <div>
+                        <input type="button" value="Price details" id="btn2">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <input type="button" value="Reserve" id="btn3">
+                </div>
+            </div>
+
+            <!-- box5 starts -->
+
+            <div class="box5">
+                <div>
+                    <img width="100%" height="100%"
+                    src="https://images.trvl-media.com/hotels/1000000/470000/465100/465005/adc2bc6d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt="">
+                </div>
+                <h3>Taj Club Room, Twin Bed</h3><br>
+                <div class="a">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>323 sq ft</p>
+                </div>
+                <div class="b">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>City view</p>
+                </div>
+                <div class="c">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <p>Sleeps 3</p>
+                </div>
+                <div class="d">
+                    <div>
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <p>2 Twin Beds</p>
+                </div>
+                <div class="e">
+                    <div>
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <p>Free Wifi</p>
+                </div>
+                <div class="f">
+                    <div>
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <p>Breakfast buffet</p>
+                </div>
+                <div class="g">
+                    <div>
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <p>Free Self parking</p>
+                </div>
+                <div class="h">
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Reserve now, pay deposit</p>
+                </div><br>
+                
+                <div class="box-a">
+                    <div class="i">
+                        <p>Fully refundable</p>
+                        <div>
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <p class="date">Before Mon, Dec 27</p>
+                    <div class="j">
+                        <input type="button" value="More details " id="btn1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="box-b">
+                    <h2>$320</h2>
+                    <div>
+                    <p>per night</p>
+                    <p>$380 total</p><br>
+                    <p>includes taxes and fees</p>
+                    </div>
+                </div>
+                
+                <div class="box-c">
+                    <div>
+                        <input type="button" value="Price details" id="btn2">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <input type="button" value="Reserve" id="btn3">
+                </div>
+            </div>
+
+            <!-- box6 starts -->
+
+            <div class="box6">
+                <div>
+                    <img width="100%" height="100%"
+                    src="https://images.trvl-media.com/hotels/1000000/470000/465100/465005/3d36a616.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt="">
+                </div>
+                <h3>Executive Suite, Lounge Access</h3><br>
+                <div class="a">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>485 sq ft</p>
+                </div>
+                <div class="b">
+                    <div>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <p>City view</p>
+                </div>
+                <div class="c">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <p>Sleeps 3</p>
+                </div>
+                <div class="d">
+                    <div>
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <p>1 King Bed</p>
+                </div>
+                <div class="e">
+                    <div>
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <p>Free Wifi</p>
+                </div>
+                <div class="f">
+                    <div>
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <p>Breakfast buffet</p>
+                </div>
+                <div class="g">
+                    <div>
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <p>Free Self parking</p>
+                </div>
+                <div class="h">
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Reserve now, pay deposit</p>
+                </div><br>
+                
+                <div class="box-a">
+                    <div class="i">
+                        <p>Fully refundable</p>
+                        <div>
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <p class="date">Before Mon, Dec 27</p>
+                    <div class="j">
+                        <input type="button" value="More details " id="btn1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="box-b">
+                    <h2>$487</h2>
+                    <div>
+                    <p>per night</p>
+                    <p>$575 total</p><br>
+                    <p>includes taxes and fees</p>
+                    </div>
+                </div>
+                
+                <div class="box-c">
+                    <div>
+                        <input type="button" value="Price details" id="btn2">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <input type="button" value="Reserve" id="btn3">
+                </div>
+            </div>
+        </div>
+
+        <div id="model_container">
+            <div  id="model_heading">
+                <button class="close-button">&times;</button>
+                <div class="model-title">Your payment options</div>
+            </div>
+            <div id="model_body">
+                <div>
+                    <i class="fas fa-check-square"></i>
+                    <div>
+                        <h3>
+                        Fully refundable before Fri, Dec 31
+                        </h3>
+                        <p>You can change or cancel this stay if plans change. Because flexibility matters.</p>
+                    </div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    
+</body>
+</html>
