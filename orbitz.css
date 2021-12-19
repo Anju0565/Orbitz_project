@@ -1,5 +1,3 @@
-
-
 body {
   background-color: #f5f5f5;
   font-family: sans-serif;
@@ -16,7 +14,11 @@ body {
   /* border: 1px solid red; */
 }
 
-#home{
+img {
+  cursor: pointer;
+}
+
+#home {
   height: 550px;
   width: 100%;
   background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
@@ -25,7 +27,7 @@ body {
   background-size: cover;
 }
 
-#navbar{
+#navbar {
   height: 100px;
   width: 100%;
   font-size: large;
@@ -34,31 +36,56 @@ body {
   font-size: 15px;
   color: white;
 }
-#left, #right{
-  display:flex;
+#left,
+#right {
+  display: flex;
   justify-content: space-around;
 }
 
-#left{
-  margin-left: 80px;
-  margin-top: 30px;
+#select {
+  border: #00253c;
+  background-color: transparent;
+  color: white;
+  width: 100px;
 }
 
-#right{
+#select:hover {
+  color: teal;
+}
+
+#right > div:hover {
+  color: teal;
+}
+
+#select > option {
+  /* background-color: #00253c; */
+  color: black;
+}
+
+#left {
   margin: auto;
-  padding-left: 80px;
+  cursor: pointer;
 }
 
-#left > div{
-  width: 40%;
+#right {
+  margin: auto;
+  padding-left: 120px;
+  text-align: end;
+  text-align: center;
+  cursor: pointer;
+}
+
+#left > div {
+  margin: auto;
+  /* width: 40%;
   margin-left: 20px;
-  margin-right: 0px;
+  margin-right: 0px; */
 }
 
-#left >div >img{
+#left > div > img {
   padding-right: 40px;
 }
-#right > div{
+#right > div {
   width: 40%;
   margin-left: 20px;
   margin-right: 20px;
@@ -67,44 +94,58 @@ body {
 
 /* seaching start */
 
-#searching_bar{
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+#searching_bar {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
   min-height: 250px;
   width: 85%;
   margin: auto;
   margin-top: 2%;
   background-color: ivory;
 }
-#searching_Nav{
+#searching_Nav {
   height: auto;
   width: 60%;
   align-items: center;
   text-align: center;
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
   padding: 2%;
+  cursor: pointer;
 }
-#searching_Nav+hr{
+#searching_Nav + hr {
   width: 90%;
 }
-#search_bar{
+#search_bar {
   display: flex;
   width: 80%;
   margin: auto;
   align-items: center;
   padding: 1%;
 }
-#search_bar > div{
+#search_bar > div {
   margin-left: 4%;
 }
-#checkbox{  
+
+#search_bar > div > input {
+  height: 30px;
+  text-align: center;
+}
+#checkbox {
   width: 32%;
   display: flex;
   margin-left: 9%;
   align-items: center;
   padding: 1%;
 }
-#search_btn{
+
+#checkbox > input {
+  margin-left: 30px;
+}
+
+#search_btn {
   width: 15%;
   padding: 12px;
   margin-left: 45%;
@@ -120,20 +161,23 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 32%);
-  grid-template-rows: repeat(1,315px);
+  grid-template-rows: repeat(1, 315px);
   justify-content: space-between;
   line-height: 15px;
   /* border: 1px solid red; */
 }
 
-.pic1,.pic2,.pic3{
+.pic1,
+.pic2,
+.pic3 {
   height: 100%;
   width: 100%;
   /* border: 1px solid red; */
   background-color: white;
 }
 
-h3,p{
+h3,
+p {
   padding-left: 10px;
 }
 
@@ -164,38 +208,25 @@ h3,p{
   width: 100%;
   /* border: 1px solid red; */
   background-color: #ffffff;
-  
 }
 
-.leftbox>img{
-  height: 78%;  
+.leftbox > img {
+  height: 78%;
 }
 
-
-/* .left-side2 {
-  height: 30%;
-  width: 100%;
-  /* border: 1px solid red; */
-  /* background-color: #ffffff; */
-} */
-
-
-.rightbox{
+.rightbox {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(2,100px);
-  grid-gap: 150px;
-
-  
+  grid-template-rows: repeat(2, 135px);
+  grid-gap: 15px;
 }
 
-
-.right-side1>div>img{
+.right-side1 > div > img {
   height: 100%;
   width: 90%;
 }
 
-.right-side1{
+.right-side1 {
   height: 100%;
   width: 95%;
   display: flex;
@@ -204,11 +235,11 @@ h3,p{
   background-color: #ffffff;
 }
 
-.right-side1>div>img{
+.right-side1 > div > img {
   width: 130px;
 }
 
-.right-side2>div>img{
+.right-side2 > div > img {
   width: 130px;
 }
 
@@ -228,7 +259,6 @@ h3,p{
   background-size: cover;
   background-position: 0%;
   color: white;
-
 }
 
 #add4 > h3 {
@@ -309,14 +339,14 @@ button {
   border: none;
 }
 
-h2{
+h2 {
   margin-left: 10px;
 }
 
 #explore {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(1,370px);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 370px);
   grid-gap: 10px;
   /* border: 1px solid red; */
 }
@@ -328,10 +358,9 @@ h2 {
   color: #00253c;
 }
 
-#explore>div>p{
-  	
-color:#007e8f;
-line-height: 15px;
+#explore > div > p {
+  color: #007e8f;
+  line-height: 15px;
 }
 
 /* Footer styling starts here */
