@@ -1,0 +1,324 @@
+*
+{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+ #bar
+ {
+     color:grey;
+     font-size: 20px;
+     margin-left: 50px;
+ }
+ #right-side
+ {
+    color:grey;
+     font-size: 20px;
+     margin-left: 550px;
+ }
+ .destination1
+ {
+     width: 300px;
+     height: 50px;
+     border: 1px solid black;
+     margin:40px 20px;
+ }
+ #destination
+ {
+     display: flex;
+ }
+ .destination2
+ {
+    width: 150px;
+     height: 50px;
+     border: 1px solid black;
+     margin:40px 20px; 
+ }
+ #imagescontainer
+ {
+    background-color: #f5f5f5;
+    padding: 5px 70px;
+ }
+ #image1
+ {
+     display: grid;
+     grid-template-columns: 800px 350px;
+     grid-template-rows: 340px;
+     grid-gap: 50px;
+     margin-top: 40px;
+ }
+ #img1left2
+ {
+     margin-left: 20px;   
+ }
+ #img1left1
+ {
+   background-color: #ffffff;     
+ }
+ #img1right1
+ {
+     margin-left: 5px;
+     display: flex;
+     border: 1px solid grey;
+     background-color: #ffffff;
+     margin-bottom: 20px;
+ }
+ #image2
+ {
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: 260px;
+     grid-gap:30px;
+ }
+ #image3
+ {
+    display: grid;
+     grid-template-columns: 75% 27%;
+     grid-template-rows: 280px;
+     grid-gap: 17px;
+     margin-top: 40px;  
+ }
+ #image4
+ {
+    display: grid;
+     grid-template-columns: repeat(5,1fr) ;
+     grid-template-rows: 190px;
+     grid-gap: 20px;
+     margin-top: 40px;   
+ }
+ #middle1
+ {
+     padding: 50px;
+     color: white;
+     margin-top: 40px;
+     font-weight: 100000px;
+     
+ }
+ #back1
+ {
+    background-image:radial-gradient(rgba(80,80,80,0.6),rgba(80,80,80,0.6)), url( https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_LastMinute_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh);
+ }
+ #back2
+ {
+     background-image:radial-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_PetFriendly_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh );
+     
+ }
+ #back3
+ {
+     background-image:radial-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_Luxury_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh);
+     
+ }
+ #back4
+ {
+     background-image:radial-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_AllInclusive_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh);
+     
+ }
+ #back5
+ {
+     background-image:radial-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url( https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_Romantic_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh);
+     
+ }
+ #back6
+ {
+     background-image:radial-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_PetFriendly_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh );
+     
+ }
+ h1
+ {
+     margin-bottom: -32px;
+     font-weight: bolder;
+ }
+ #img2h1
+ {
+     margin-bottom: 20px;
+     margin-top: -8px;
+ }
+ p{ 
+   color: grey;
+ }
+ h2
+ {
+     font-weight: bolder;
+ }
+ h3
+ {
+     font-weight: bolder;
+ }
+ #more-des
+ {
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: 50px 50px 50px;
+     grid-gap:20px;
+ }
+ #more-des>div
+ {
+    background-color: #ffffff;
+    margin: -5px 0px;
+    padding: 0px 12px;
+}
+#more
+{
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+#container1
+{
+    height: auto;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+#home{
+    height: 550px;
+    width: 100%;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navbar{
+    height: 100px;
+    width: 100%;
+    font-size: large;
+    display: flex;
+    background-color: #00253c;
+    font-size: 15px;
+    color: white;
+}
+#left, #right{
+    display:flex;
+    margin: auto;
+}
+
+#left > div{
+    width: 40%;
+    margin-left: 25px;
+    margin-right: 0px;
+}
+#right > div{
+    width: 40%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* Footer styling starts here */
+footer{
+    height: 120px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 2%;
+}
+/* Footer styling ends here */
+/* Traveling Box Starts Here */
+#traveling_tips{
+    margin: auto;
+    margin: 3%;
+    height: 250px;
+    width: 100%;
+    display: flex;
+}
+#traveling_box1{
+    width: 45%;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg");
+}
+#traveling_box2{
+    width: 45%;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg");  
+}
+#traveling_box1, #traveling_box2{
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 25px;
+    color: rgb(240, 236, 236);
+}
+button{
+    width: 20%;
+    padding: 1%;
+    color: #00253c;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#right>div
+{
+   margin: 0px 15px;
+}
+#select
+{
+    margin-left: 23px;
+}
+/* Explore Navbar starts here */
+#explore{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-items: center;
+}
+#exp_img{
+    width: 15%;
+    margin: 1.6%;
+}
+#explore > div{
+    text-align: left;
+    margin-left: 4%;
+    font-size: 14px;
+    color: #00253C;
+    margin-right: 5%;
+}
+
+       /* Search Box Style Here  */
+
+       #searching_bar{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    min-height: 250px;
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    background-color: ivory;
+}
+#searching_Nav{
+    height: auto;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    padding: 2%;
+}
+#searching_Nav>div
+{
+   margin:10px;
+}
+
+#searching_Nav+hr{
+    width: 90%;
+}
+#search_bar{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding: 1%;
+}
+#search_bar > div{
+    margin-left: 4%;
+}
+#checkbox{  
+    width: 32%;
+    display: flex;
+    margin-left: 9%;
+    align-items: center;
+    padding: 1%;
+}
+#search_btn{
+    width: 15%;
+    padding: 12px;
+    margin-left: 45%;
+    margin-bottom: 5%;
+    background-color: crimson;
+    color: white;
+    border: none;
+}
+
+  /* Search Box Styling End Here */
