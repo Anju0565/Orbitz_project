@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Bookingt</title>
+    <link rel="stylesheet" href="confirm_booking.css">
+</head>
+<body>
+    <div id="main">
+    <div id="logo">
+        <img id="img" src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2">
+    </div>
+    <div id="body">
+        <div id="container">
+            <form id="form">
+                <h1>Payment</h1>
+                <div>
+                    <h3>Choose Payment Method</h3><br>
+                    <input type="radio" value="payment_method" required>
+                    <label>Debit Card</label>
+                    <input type="radio" value="payment_method" required>
+                    <label>Credit Card</label>
+                </div>
+                <div>
+                    <label>Name On Card</label><br>
+                    <input type="text" placeholder="John-Doe" required>
+                <div>
+                    <label>Card Number</label><br>
+                    <input type="text" placeholder="1234-1234-1234" maxlength="12" minlength="12" required>
+                </div>
+                <div>
+                    <label>CVV</label><br>
+                    <input type="text" placeholder="324" maxlength="3" minlength="3" required>
+                </div>
+                <div>
+                    <label>Expiry Date</label><br>
+                    <input type="date">
+                </div>
+                <div>
+                    <label>Phone Number</label><br>
+                    <input type="text" placeholder="+91-1234567890" minlength="10" maxlength="10" required>
+                </div>
+                <div>
+                    <label>Email</label><br>
+                    <input type="email" placeholder="someone@gmail.com" required>
+                </div>
+                <input type="submit" value="Proceed To Pay" id="submit">
+            </form>
+        </div> 
+    </div>
+    </div>  
+</body>
+</html>
+<script src="confirm_booking.js"></script>
