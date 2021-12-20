@@ -1,0 +1,331 @@
+#body{
+    background-color: rgb(253, 251, 247)
+   
+}
+
+
+#explore{
+width: 100%;
+display: flex;
+/* margin: auto; */
+justify-items: center;
+
+
+}
+#exp_img{
+width: 65%;
+margin: 1%;
+}
+#explore > div{
+text-align: left;
+margin-left: 0;
+margin-right: 15%;
+font-size: 14px;
+color: #00253C;
+}
+
+
+
+
+#container1{
+    width: 80%;
+    border: rgb(7, 6, 6) solid 2px transparent;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    "a a a a a a a a a i i i "            
+}
+.contimage{
+
+}
+.head1{
+    margin-top:60px;
+    background-color: white;
+}
+#div1>div{
+
+    background-color: white;
+    border: 1px cyan solid  transparent;
+    margin: 10px;
+}
+
+.div1{
+    grid-area: a;
+    background-color: white;
+}
+.div2{
+    grid-area: b;
+    background-color: white;
+}
+
+.div3{
+    grid-area: c;
+    background-color: white;
+}
+.div4{
+    grid-area: d;
+    background-color: white;
+}
+.div5{
+    grid-area: e;
+    background-color: white;
+}
+.div6{
+    grid-area: f;
+    background-color: white;
+}
+.div7{
+    grid-area: g;
+    background-color: white;
+}
+.div8{
+    grid-area: h;
+    background-color: white;
+ 
+}
+.div9{
+    grid-area: i; 
+    background-color: white;
+}
+.div10{
+    grid-area: j;
+    background-color: white;
+}
+.div11{
+    grid-area: k;
+    background-color: white;
+}
+.div12{
+    grid-area: l;
+    background-color: white;
+}
+.div13{
+    grid-area: m;
+    background-color: white;
+}
+.div14{
+    grid-area: n;
+    background-color: white;
+}
+.div15{
+    grid-area: o;
+    background-color: white;
+}
+.div16{
+    grid-area: p;
+    background-color: white;
+}
+.div17{
+    grid-area: q;
+    background-color: white;
+}
+.div18{
+    grid-area: r;
+    background-color: white;
+}
+.div19{
+    grid-area: s;
+    background-color: white;
+}
+.div20{
+    grid-area: t;
+    background-color: white;
+}
+.div21{
+    grid-area: u;
+    background-color: white;
+}
+.img1{
+   
+}
+.subdiv9{
+    display: flex;
+    display: inline-flex;
+    margin-left: 20px;
+}
+.image1{
+    margin-top: 60px;
+    height: 150px;
+    width: 150px;
+}
+.subdiv9>img>img{
+    margin-top: 10px;
+}
+#container2{
+    width: 80%;
+    border: black solid 2px transparent;
+    margin: auto;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    "m m m m m m m m m m m m"
+    "j j j j k k k k l l l l"
+   
+}
+#container2>div{
+    margin: 10px;
+    border: solid blue transparent;
+}
+.offdiv{
+    display: flex;
+}
+.off{
+    width: 100px;
+    height: 30px;
+    border: red solid 3px transparent;
+    text-align: center;
+    padding-top: 10px;
+    border-radius:30px;
+    background-color: green;
+    color: white;
+}
+.horizon{
+    display: flex;
+    justify-content: space-between;
+}
+#container3{
+    width: 80%;
+    border: red solid 2px transparent;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    "a a a a a a a a i i i i"         
+}
+#featureimage{
+    width: 750px;
+    height: 350px;
+}
+.featurediv{
+    
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/09/25/15ORB_GeoTargeted_Chicago_mrq_1320x742_20200525.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+    background-size: 750px 350px;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.image2{
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/09/25/15ORB_GeoTargeted_Chicago_mrq_1320x742_20200525.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+    background-size: 400px 350px;
+   
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 85px;
+    
+    
+    
+}
+.bookbutton{
+    justify-content: space-between;
+    display: flex;
+    padding-top: 100px;
+}
+button{
+    margin-top: 80px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(49, 238, 238);
+
+}
+#container4{
+    width: 80%;
+    border: black solid 2px transparent;
+    margin: auto;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    "m m m m m m m m m m m m"
+    "j j j j k k k k l l l l"
+}
+.image4{
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/12/13/ORB_Fiji_Meso_Storefront_1024x700_20211208_V1.jpg?impolicy=fcrop&w=600&h=257&q=medium");
+    background-size: 390px 260px;
+    background-repeat:no-repeat;
+    padding-top: 100px;
+    color: white;          
+}
+.image5{
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/glamping2.jpeg?impolicy=fcrop&w=600&h=257&q=medium");
+}
+.image6{
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/20/roadtripapp.jpeg?impolicy=fcrop&w=600&h=257&q=medium");
+}
+#container5{
+    width: 80%;
+    border: black solid 2px transparent;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#container5>div{
+    border: red solid 5px transparent;
+    margin: 2px;
+}
+#advertisement{
+    width: 60%;
+    border: blue solid 2px transparent;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_omOW1crPCnXhm-PDWswzMS2pJe2QIpnF7A&usqp=CAU");
+    
+}
+#container6{
+    width: 80%;
+    border: black solid 2px transparent;
+    margin: auto;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+    background-color: white;
+}
+.para{
+    line-height: 20px;
+}
+.dogimg{
+    height: 170px;
+    width: 180px;
+    border: red solid 1px transparent;
+}
+.adv.{
+    width: 900px;
+    height: 100px;
+    border: wheat solid 1px transparent;
+}
+#lastimage{
+    width: 500px;
+    height: 500px;
+}
+#img10{
+  height: 240px;
+  width: 370px;
+}
+.select{
+  height: 60px;
+  width: 100px;
+  margin-left: 10px;
+}
+.phone{
+  height: 60px;
+  width: 200px;
+}
+.list{
+  padding: 20px;
+}
