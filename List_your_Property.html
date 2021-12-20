@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #root {
+            display: grid;
+        }
+
+        .header {
+            height: 64px;
+            width: 1654px;
+        }
+
+        .bck {
+            width: 1654px;
+            height: 514px;
+            background-image: url(./images/background.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .bckcontent {
+            height: 134px;
+            width: 1650px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bckcontent>#tag {
+            padding-left: 58%;
+        }
+
+        .text {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            padding-left: 58%;
+        }
+
+        .innertext {
+            margin: 0px 190px 0px 0px;
+            font-size: 16px;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .select {
+            height: 340px;
+            width: 1574px;
+        }
+
+        .block {
+            height: 340px;
+            width: 570px;
+            padding-left: 61%;
+
+        }
+
+        .pad {
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: white;
+        }
+
+        .pad>p {
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 32px;
+            color: #009;
+            margin-top: 0px;
+        }
+
+        .two {
+            height: 204px;
+            width: 490px;
+            padding: 0px;
+            margin: 0px;
+            display: grid;
+            grid-template-columns: repeat(2, 229px);
+            grid-template-rows: 100%;
+            justify-content: space-between;
+        }
+
+        .two>div {
+            border: 2px solid #5252ff;
+            border-radius: 15px;
+        }
+
+        .upper {
+            height: 106px;
+            width: 225px;
+        }
+
+        .upper>img {
+            padding: 40px 83px 20px;
+        }
+
+        .lower {
+            margin: 0px;
+        }
+
+        .lower>p {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .bold {
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        .small {
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #5e6f73;
+            line-height: 18px;
+            padding: 0px 15px;
+            margin: 0px 24px 34px;
+        }
+
+        .block_two {
+            height: 498px;
+            width: 1180px;
+            margin: 0px 16%;
+            padding: 0px 40px;
+            text-align: center;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .block_two>.a {
+            color: #009;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .block_two>p {
+            font-size: 16px;
+            margin: 0px 240px 56px;
+        }
+
+        .trio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 320px;
+        }
+
+        .trio>div {
+            margin: 0px 8px 56px;
+        }
+
+        .lower_two {
+            text-align: center;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        .lower_two>p {
+            font-size: 16px;
+        }
+
+        .block_three {
+            width: 1750px;
+            height: 206px;
+            margin: 0px 0px 72px;
+            padding: 0px 40px 40px;
+            display: grid;
+            text-align: center;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .block_three>h2 {
+            color: #009;
+            font-weight: 700;
+            margin-top: 0px;
+            margin-bottom: 16px;
+        }
+
+        .block_three>div {
+            grid-template-columns: repeat(8, 94px);
+            grid-template-rows: 137px;
+            padding: 12px;
+        }
+
+        .block_three>div>img {
+            height: 70px;
+            width: 114px;
+            margin-right: 30px;
+        }
+
+        .block_three>p {
+            font-size: 16px;
+        }
+
+        .block_four {
+            width: 1750px;
+            height: 500px;
+            padding: 0px 40px;
+            text-align: center;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .block_four>h2 {
+            color: #009;
+            font-weight: 700;
+            margin: 0px 0px 16px;
+        }
+
+        .block_four>p {
+            font-size: 16px;
+            margin: 0px 30% 56px;
+        }
+
+        .block_four>div {
+            display: grid;
+            grid-template-columns: repeat(2, 493px);
+            grid-template-rows: 294px;
+            margin: 0px 22%;
+        }
+
+        .upper_three>img {
+            height: 100px;
+            width: 165px;
+        }
+
+        .lower_three>p {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        .block_five {
+            text-align: center;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            height: 318px;
+            background-color: #EFF1F3;
+        }
+
+        .block_five>h2 {
+            color: #009;
+            margin-top: 0px;
+            margin-bottom: 16px;
+            padding-top: 64px;
+        }
+
+        .block_five>p {
+            padding-bottom: 15px;
+        }
+
+        .block_five>div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .block_five>div>p {
+            padding: 18px;
+        }
+
+        .block_six {
+            width: 100%;
+            height: 365px;
+            background-color: #009;
+            display: flex;
+            justify-content: center;
+        }
+
+        .block_six>div {
+            width: 50%;
+            height: 85%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .block_six>div>div {
+            height: 100%;
+            width: 30%;
+        }
+
+        .link {
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        #only {
+            color: white;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            font-size: 13px;
+        }
+
+        .blue {
+            color: #009;
+        }
+
+        .button {
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            text-decoration: none;
+            padding: 15px 15px;
+            background-color: #009;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="header">
+                <img src="https://apps.expediapartnercentral.com/list/static/images/eg-logo-blue.svg" />
+            </div>
+            <div class="bck">
+                <div class="bckcontent">
+                    <h2 id="tag">
+                        <img src="https://apps.expediapartnercentral.com/list/static/images/Orbitz.svg"
+                            alt="Orbitz Logo" height="34px" />
+                    </h2>
+                    <div class="text">
+                        <div class="innertext">
+                            Reach the guests you want—those who truly value your property—with Expedia Group. Signing up
+                            is free, fast, and easy.
+                        </div>
+                    </div>
+                </div>
+                <div class="select">
+                    <div class="block">
+                        <div class="pad">
+                            <p>What would you like to list?</p>
+                            <div class="two">
+                                <div>
+                                    <div class="upper">
+                                        <img src="./images/Lodging.svg" height="48px" width="60px" />
+                                    </div>
+                                    <div class="lower">
+                                        <p class="bold">Lodging</p>
+                                        <p class="small">A hotel, motel, bed or breakfast</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="upper">
+                                        <img src="./images/PrivateResidence.svg" height="48px" width="60px" />
+                                    </div>
+                                    <div class="lower">
+                                        <p class="bold">Private residence</p>
+                                        <p class="small">A private home, apartment or vacation home</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="block_two">
+                    <h2 class="a">Bring the right guests within reach</h2>
+                    <p>Connect with millions of people whose purpose, taste and budget make your property the perfect
+                        place to stay.</p>
+                    <div class="trio">
+                        <div>
+                            <div class="upper_two">
+                                <img src="./images/icon-world-travelers.png" alt="Pillar_CL_alt_1" height="100px"
+                                    width="100px" />
+                            </div>
+                            <div class="lower_two">
+                                <h3>Access a world of travelers</h3>
+                                <p>From long-range planners to last-minute bookers, bring travelers to your door from
+                                    around the world. </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="upper_two">
+                                <img src="./images/icon-ideal-guests.png" alt="Pillar_CL_alt_2" height="100px"
+                                    width="100px" />
+                            </div>
+                            <div class="lower_two">
+                                <h3>Attract your ideal guests </h3>
+                                <p>Book your ideal guests—travelers who delight in what you provide and want to return
+                                    again and again.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="upper_two">
+                                <img src="./images/icons-grow-business.png" alt="Pillar_CL_alt_3" height="100px"
+                                    width="100px" />
+                            </div>
+                            <div class="lower_two">
+                                <h3>Grow your business</h3>
+                                <p>Make decisions based on real-time data, be more competitive &amp;amp; help increase
+                                    visibility and bookings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block_three">
+                <h2>Orbitz is a member of the Expedia Group marketplace of travel brands</h2>
+                <div>
+                    <img src="./images/Expedia logo.svg" alt="expedia" />
+                    <img src="./images/H.com logo.svg" alt="hotels.com" />
+                    <img src="./images/Vrbo logo.svg" alt="vrbo" />
+                    <img src="./images/Travelocity logo.svg" alt="travelocity" />
+                    <img src="./images/Hotwire logo.svg" alt="hotwire" />
+                    <img src="./images/orbitz logo.svg" alt="orbitz" />
+                    <img src="./images/ebookers logo.svg" alt="ebookers" />
+                    <img src="./images/CheapTickets logo.svg" alt="CheapTickets" />
+                </div>
+                <p>...and many more</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block_four">
+                <h2>Explore the benefits of working with us</h2>
+                <p>For over 25 years, we’ve learned what travelers seek, what makes properties attractive, and how to
+                    bring the two together. Discover how this helps you.</p>
+                <div>
+                    <div>
+                        <div class="upper_three">
+                            <img src="./images/icons-lodging.png" alt="Hotel building">
+                        </div>
+                        <div class="lower_three">
+                            <h3>Lodging</h3>
+                            <p>Confidently fill your rooms so you can do more of what you love—creating wonderful guest
+                                experiences</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="upper_three">
+                            <img src="./images/icons-private-residence.png" alt="Private recidence">
+                        </div>
+                        <div class="lower_three">
+                            <h3>Private residence</h3>
+                            <p>Rent your property your way. Set pricing, availability, rules, policies and more to fit
+                                your needs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block_five">
+                <h2>Ready to get started?</h2>
+                <p>Join us today and unlock access to high-value guests.</p>
+                <a href="List_your_Property.html" class="button">your Property</a>
+                <div>
+                    <p>Already a partner with Expedia Group?</p>
+                    <p class="blue">Login to Partner Central</p>
+                    <p class="blue">Login to Verbo</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block_six">
+                <div>
+                    <div>
+                        <p><a href="List_your_Property.html" class="link">FAQs</a></p>
+                        <p><a href="Sign_in.html" class="link">Sign in</a></p>
+                    </div>
+                    <div>
+                        <p><a href="List_your_Property.html" class="link">Inclusion statement</a></p>
+                        <p><a href="List_your_Property.html" class="link">About us</a></p>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="List_your_Property.html" class="link"><img src="./images/eg-logo.svg" height="50px"
+                                    width="150px" /></a>
+                        </div>
+                        <p id="only">Our lodging partners—inns, hotels,
+                            guesthouses,
+                            and more—are
+                            supported by an experienced account management team. Well-informed on market conditions
+                            and travel trends, they provide insights and ideas to help you grow your business.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

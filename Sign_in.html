@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .container {
+            background-color: rgb(230, 225, 225);
+        }
+
+        .bck {
+            width: 100%;
+            height: 628px;
+            background-image: radial-gradient(rgba(13, 13, 63, 0.85), rgba(13, 13, 63, 0.85)), url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/20000/20049-Brooklyn.jpg?impolicy=fcrop&w=1280&h=720&q=low);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #lang {
+            height: 8%;
+            width: 100%;
+            display: flex;
+            justify-content: right;
+        }
+
+        #lan {
+            border: transparent;
+            background-color: transparent;
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        #lan:hover {
+            background-color: rgb(123, 136, 123);
+            border-radius: 3px;
+        }
+
+        option {
+            color: black;
+        }
+
+        .login {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .login>div {
+            width: 320px;
+            height: 100%;
+            text-align: center;
+        }
+
+        .img {
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 0px;
+            margin-bottom: 10px;
+        }
+
+        #sign {
+            padding: 12px 0px;
+            width: 100%;
+            background-color: #009;
+            color: white;
+            border: transparent;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(129, 116, 116);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .second {
+            width: 100%;
+            height: 330px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .second>div {
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-weight: 200;
+        }
+
+        #narrow {
+            padding: 0px 30%;
+            margin-bottom: 70px;
+        }
+
+        .center {
+            width: 400px;
+            height: 200px;
+        }
+
+        .center>div {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+        }
+
+        .third {
+            background-color: white;
+            width: 100%;
+            height: 240px;
+            display: flex;
+            justify-content: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .third>div {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 50px;
+            font-weight: 200;
+        }
+
+        .narrow2 {
+            font-size: 15px;
+            padding: 0px 40px;
+        }
+
+        .lower {
+            border: solid #009;
+            background-color: #009;
+            color: white;
+            padding: 10px;
+        }
+
+        .fourth {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .fourth>div {
+            height: 100%;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bck">
+            <div id="lang">
+                <div>
+                    <select name="Language" id="lan">
+                        <option value="English">English(UK)</option>
+                        <option value="English">English(US)</option>
+                        <option value="Italian">Italiano</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Dutch">Deutsch</option>
+                        <option value="Portugese">Portugese(Portugal)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="login">
+                <div>
+                    <div class="img">
+                        <img src="./images/eg_logo_2x.png" height="60px" width="256px" />
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Username/email address">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <button id="sign">Sign In</button>
+                    </div>
+                    <div>
+                        <p><a href="Sign_in.html">Forget your password?</a></p>
+                        <p><a href="Sign_in.html">Look up Expedia virtual card(EVC) information</a></p>
+                        <p><a href="Sign_in.html">Request property access</a></p>
+                        <p><a href="Sign_in.html">Expedia Group employee? Sign in here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <h2>Welcome to Partner Central</h2>
+            <p id="narrow">Your connection to Expedia Group’s global travel marketplace, Partner Central provides tools
+                and
+                information to help you attract travellers, manage your business, and maximise revenue potential.</p>
+            <div>
+                <div class="center">
+                    <div>
+                        <img src="./images/4350894.png" height="80px" width="90px" />
+                    </div>
+                    <p>Optimising your listing</p>
+                </div>
+                <div class="center">
+                    <div>
+                        <img src="./images/360_F_369848168_460zI68w1vUJsouGvEkVq0Jt4XJxiT4c.jpg" height="80px"
+                            width="90px" />
+                    </div>
+                    <p>Target the right guests</p>
+                </div>
+                <div class="center">
+                    <div>
+                        <img src="./images/payment-icon-2B3GTB2.jpg" height="80px" width="90px" />
+                    </div>
+                    <p>Set rates with confidence</p>
+                </div>
+                <div class="center">
+                    <div>
+                        <img src="./images/review.png" height="80px" width="90px" />
+                    </div>
+                    <p>Manage reviews</p>
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <div>
+                <div>
+                    <h3>How it works</h3>
+                    <p class="narrow2">Listing in our marketplace gives you access to millions of people planning their
+                        next trip. We’ll
+                        show you how a few simple steps can help you start attracting new guests.</p>
+                    <div>
+                        <button class="lower">Learn More</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>Ready to get started</h3>
+                    <p class="narrow2">Join us and unlock access to high value guests. Our tools make quick work of
+                        essential tasks and
+                        puts critical insights at your fingertips. Signup is easy, fast and free.</p>
+                    <div>
+                        <a href="List_your_Property.html"><button class="lower">List your property</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fourth">
+            <div>
+                <img src="./images/brands_footer_v3.png" height="94px" width="1200px" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

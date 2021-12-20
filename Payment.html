@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        #nav {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            background-color: #00253C;
+        }
+
+        .container1 {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container1>div {
+            margin: 10px 0px;
+        }
+
+        #skyblue {
+            color: #00B1FF;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            display: flex;
+
+        }
+
+        #sign {
+            margin: 15px 0px;
+        }
+
+        #root {
+            background-color: rgb(231, 231, 231);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container2 {
+            width: 60%;
+            height: 100%;
+        }
+
+        .inner {
+            height: 1020px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(9, 120px);
+            grid-template-rows: repeat(17, 50px);
+            grid-gap: 10px;
+        }
+
+        .inner>div:nth-child(1) {
+            grid-area: 1/1/2/7;
+        }
+
+        .inner>div:nth-child(2) {
+            grid-area: 1/7/8/10;
+        }
+
+        .inner>div:nth-child(3) {
+            grid-area: 2/1/8/7;
+        }
+
+        .inner>div:nth-child(4) {
+            grid-area: 8/7/13/10;
+        }
+
+        .inner>div:nth-child(5) {
+            grid-area: 8/1/18/7;
+        }
+
+        .inner>div {
+            background-color: white;
+            border-radius: 2px;
+        }
+
+        .fl {
+            display: flex;
+            margin: 0px;
+        }
+
+        .cen {
+            margin: 10px;
+        }
+
+        .h {
+            color: #0a81b4;
+            margin-top: 15px;
+        }
+
+        .h:hover {
+            text-decoration: underline;
+        }
+
+        .ho {
+            color: rgb(42, 42, 253);
+            margin: 0px 10px;
+        }
+
+        .ho:hover {
+            text-decoration: black;
+            background-color: rgb(219, 212, 212);
+        }
+
+        #brb>#b {
+            height: 40%;
+            width: 100%;
+            background-image: url(./images/Hotel-exterior-PARKROYAL-COLLECTION-Marina-Bay-Singapore-Honeymoon-Packages-.jpg);
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        #brb>#b>h3 {
+            margin: 0px;
+
+        }
+
+        #lightgreen {
+            height: 60px;
+            width: 97%;
+            background-color: rgb(226, 247, 226);
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+
+        #violet {
+            height: 60px;
+            width: 97%;
+            background-color: rgb(240, 229, 240);
+            margin-right: 10px;
+        }
+
+        hr {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .outer {
+            width: 100%;
+            height: 1400px;
+            display: grid;
+            grid-template-columns: 770px;
+            grid-template-rows: 450px 450px 400px;
+            grid-gap: 10px;
+        }
+
+        .outer>div {
+            background-color: white;
+            border-radius: 2px;
+        }
+
+        input {
+            padding: 8px;
+            margin-right: 15px;
+            border-radius: 3px;
+        }
+
+        select {
+            background-color: rgb(187, 185, 185);
+            padding: 8px;
+            border-radius: 3px;
+            margin-right: 8px;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 10px 10px 10px 0px;
+        }
+
+        p {
+            color: rgb(119, 119, 119);
+            font-size: 14px;
+            margin: 10px 5px;
+        }
+
+        .gray {
+            color: rgb(119, 119, 119);
+            font-size: 14px;
+            margin: 10px 5px 10px 0px;
+        }
+
+        .greeneffect {
+            color: rgb(13, 173, 13);
+            margin-left: 20px;
+        }
+
+        button {
+            padding: 0px 10px;
+            background-color: rgb(194, 70, 132);
+            color: white;
+            border: solid rgb(194, 70, 132);
+            border-radius: 3px;
+        }
+
+        #white {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="container1">
+            <div>
+                <img src="./images/logo.svg" height="40px" />
+            </div>
+            <div id="skyblue" class="h">
+                <img src="images/sign_in.png" id="sign" height="17px" width="17px" />
+                <p>Sign in</p>
+            </div>
+        </div>
+    </div>
+    <div id="root">
+        <div class="container2">
+            <div>
+                <h1>Secure booking — only takes 2 minutes!</h1>
+                <div>
+                    <p class="greeneffect">You've picked a winner! This hotel is rated 4.3/5</p>
+                </div>
+                <div class="inner">
+                    <div class="fl">
+                        <div>
+                            <img src="./images/18798-200.png" class="cen" alt="icon" height="30px" width="30px" />
+                        </div>
+                        <h3 class="h">Sign in to book faster</h3>
+                    </div>
+                    <div id="brb">
+                        <div id="b">
+                            <h3 id="white">PARKROYAL COLLECTION Marina Bay, Singapore (SG Clean)</h3>
+                        </div>
+                        <div class="fl">
+                            <h4>4.3/5</h4>
+                            <p>Excellent(1,346 revies)</p>
+                        </div>
+                        <p>Guests rated this property 4.3/5 for cleanliness</p>
+                        <div class="fl">
+                            <h5>1Room:</h5>
+                            <p>Lifestyle King</p>
+                        </div>
+                        <p>Non-Refundable</p>
+                        <div class="fl">
+                            <h5>Check-in:</h5>
+                        </div>
+                        <div class="fl">
+                            <h5>Check-out:</h5>
+                        </div>
+                        <p>1 night stay</p>
+                    </div>
+                    <div class="fl">
+                        <div>
+                            <img src="./images/sign_in.png" class="cen" height="30px" width="30px" />
+                        </div>
+                        <div>
+                            <div class="fl">
+                                <h4>Room 1: </h4>
+                                <p>2 Adults, 1 king Bed, Non-smoking</p>
+                            </div>
+                            <div class="fl">
+                                <p class="greeneffect">Free Parking</p>
+                                <p class="greeneffect">Free Wifi</p>
+                            </div>
+                            <div class="fl">
+                                <div>
+                                    <h5>First name</h5>
+                                    <input type="text" placeholder="(e.g. Abhishek)">
+                                </div>
+                                <div>
+                                    <h5>Last name</h5>
+                                    <input type="text" placeholder="(e.g. Chandel)">
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Mobile phone number</h5>
+                                <div class="fl">
+                                    <select>
+                                        <option>IND +91</option>
+                                        <option>USA +1</option>
+                                    </select>
+                                    <input type="tel" placeholder="so the property can reach you">
+                                </div>
+                            </div>
+                            <div class="fl">
+                                <input type="checkbox">
+                                <p>Receive text Alert about ths trip.Message and data rate may apply</p>
+                            </div>
+                            <p class="h">Special Requests(Optional)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Price details</h3>
+                        <hr>
+                    </div>
+                    <div class="fl">
+                        <img src="./images/4-47843_shield-icon-hd-png-download.png" class="cen" height="30px"
+                            width="30px" />
+                        <div>
+                            <h3>Protect your hotel</h3>
+                            <div class="fl">
+                                <h5>Note:</h5>
+                                <p> If you are a resident of WASHINGTON state, please click here to view products that
+                                    you
+                                    are eligible to purchase.</p>
+                            </div>
+                            <h4>4 reasons you might need travel protection</h4>
+                            <ol class="gray">
+                                <li>You get delayed for covered reasons and miss a night of your hotel stay</li>
+                                <li>You're sick and don't use all your hotel night</li>
+                                <li>You need to extend your trip due to the illness of a travel companion</li>
+                                <li>You need up to $10,000 for covered medical expenses while on your trip</li>
+                            </ol>
+                            <p class="h">View insurance details and disclosures</p>
+                            <h4>Select Yes or No to continue booking</h4>
+                            <div id="lightgreen" class="fl">
+                                <input type="radio">
+                                <p>Yes, I want Hotel Booking Protection Plus for my trip.</p>
+                            </div>
+                            <div id="violet" class="fl">
+                                <input type="radio">
+                                <p>No, I'm willing to risk my $421.89 trip.</p>
+                            </div>
+                            <p>“ Things happened outside of my control which caused the trip to be canceled. The Travel
+                                Protection was valuable in reducing the losses to me when we had to cancel the trip. ” -
+                                Mr. Rodman</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="fl">
+                        <img src="./images/png-transparent-money-cash-computer-icons-atm-card-payment-wallets-rectangle-payment-bank-card.png"
+                            class="cen" height="30px" width="30px">
+                        <div>
+                            <div class="fl">
+                                <p class="greeneffect">We use secure transmission</p>
+                                <p class="greeneffect">We protect your personal information</p>
+                            </div>
+                            <div class="fl">
+                                <p class="ho">Debit/Credit Card</p>
+                                <p class="ho">PayPal</p>
+                                <p class="ho">Monthly Payments</p>
+                                <p class="ho">Click-to-Pay</p>
+                            </div>
+                            <hr>
+                            <div class="fl">
+                                <img src="./images/cards-cc_master_card.svg" alt="master card" class="cen" height="30px"
+                                    width="30px">
+                                <img src="./images/cards-cc_american_express (copy).svg" alt="america express"
+                                    class="cen" height="30px" width="30px">
+                                <img src="./images/cards-cc_china_union_pay (copy).svg" alt="china union" class="cen"
+                                    height="30px" width="30px">
+                                <img src="./images/cards-cc_diners_club (copy).svg" alt="dinner club" class="cen"
+                                    height="30px" width="30px">
+                                <img src="./images/cards-cc_discover.svg" alt="discover" class="cen" height="30px"
+                                    width="30px">
+                                <img src="./images/cards-cc_jcb (copy).svg" alt="jcb" class="cen" height="30px"
+                                    width="30px">
+                                <img src="./images/cards-cc_visa (copy).svg" alt="visa" class="cen" height="30px"
+                                    width="30px">
+                            </div>
+                            <h4>Name on card</h4>
+                            <input type="text">
+                            <h4>Debit/Credit card number</h4>
+                            <input type="tel">
+                            <h4>Expiration date</h4>
+                            <div class="fl">
+                                <select>
+                                    <option>Month</option>
+                                    <option value="Jan">01-Jan</option>
+                                    <option value="Feb">02-Feb</option>
+                                    <option value="Mar">03-Mar</option>
+                                    <option value="Apr">04-Apr</option>
+                                    <option value="May">05-May</option>
+                                    <option value="Jun">06-Jun</option>
+                                    <option value="Jul">07-Jul</option>
+                                    <option value="Aug">08-Aug</option>
+                                    <option value="Sep">09-Sep</option>
+                                    <option value="Oct">10-Oct</option>
+                                    <option value="Nov">11-Nov</option>
+                                    <option value="Dec">12-Dec</option>
+                                </select>
+                                <select>
+                                    <option>Year</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                    <option value="2033">2033</option>
+                                    <option value="2034">2034</option>
+                                    <option value="2035">2035</option>
+                                    <option value="2036">2036</option>
+                                    <option value="2037">2037</option>
+                                    <option value="2038">2038</option>
+                                    <option value="2039">2039</option>
+                                    <option value="2040">2040</option>
+                                </select>
+                            </div>
+                            <div class="fl">
+                                <div>
+                                    <h4>Security Code</h4>
+                                    <input type="tel">
+                                </div>
+                                <div>
+                                    <h4>Billing Zip Code</h4>
+                                    <input type="tel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cen">
+                            <h3>Manage your booking</h3>
+                            <hr>
+                            <h4>Confirmation email</h4>
+                            <p>Please enter the email address where you would like to receive your confirmation.</p>
+                            <h5>Email address</h5>
+                            <input type="email">
+                            <hr>
+                            <h5>Create an account</h5>
+                            <p>Easily access your itinerary when you create an account using the email address above.
+                            </p>
+                            <h5>Create Password</h5>
+                            <input type="password" placeholder="6-30 characters, no spaces">
+                            <h5>Confirm Password</h5>
+                            <input type="password">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cen">
+                            <h4>Important information about your booking</h4>
+                            <ul class="gray">
+                                <li>This rate is non-refundable. If you change or cancel your booking you will not get a
+                                    refund or credit to use for a future stay. This policy will apply regardless of
+                                    COVID-19, subject to any local consumer laws.</li>
+                                <li>No refunds will be issued for late check-in or early check-out.</li>
+                                <li>Stay extensions require a new reservation.</li>
+                                <li>Front desk staff will greet guests on arrival.</li>
+                            </ul>
+                            <p>By clicking on the button below, I acknowledge that I have reviewed the Privacy Statement
+                                Opens in a new window. and Government Travel Advice Opens in a new window. and have
+                                reviewed
+                                and accept the Rules & Restrictions Opens in a new window. and Terms of Use Opens in a
+                                new
+                                window..</p>
+                            <button>
+                                <h3> Complete Booking > </h3>
+                            </button>
+                            <p>We use secure transmission and encrypted storage to protect your personal
+                                information.<br>
+                                This payment will be processed in the U.S. This does not apply when the travel provider
+                                (airline/hotel/rail, etc.) processes your payment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
