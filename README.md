@@ -39,13 +39,14 @@ Orbitz.com is a travel fare aggregator website and travel metasearch engine. The
   This is our sign up page , here we successfully done the signing part to creat an account in Orbitz.
  <br>
   <br>
-  <img src="https://user-images.githubusercontent.com/88077417/167290899-7854a146-4a6b-423f-b190-6f5924f88c5c.png"/>
+  <img src="https://user-images.githubusercontent.com/88077417/167291436-2176089b-cb69-41ab-a3ac-a44ec6535b83.png"/>
 ---
  <h3>Login Page</h3>
    <br>
   <br>
   This is our Login page , Here we doing Login with same credential as we used in Sign Up part.
-  <br>  
+  <br> 
+  <br>
   <img src="https://user-images.githubusercontent.com/88077417/167291006-8b2eb617-c0a0-4ed4-af2c-1b8db1761b5b.png"/>
   ---
  
