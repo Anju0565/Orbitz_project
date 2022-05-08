@@ -62,14 +62,14 @@ Orbitz.com is a travel fare aggregator website and travel metasearch engine. The
   In this menu we are booking the items by directly going to checkout page.
   <br> 
   <br>
-  <img src="https://user-images.githubusercontent.com/88077417/167291073-2e8648a5-d649-4424-a6b9-a1689059ab86.png"/>
+  <img src="https://user-images.githubusercontent.com/88077417/167291377-30d7ccd5-284c-455c-b6a7-a97fd27c9c51.png"/>
   ---  
   <h3>Checkout Page</h3>
    <br>
   In this menu we are going to checkout and then confirm booking page.
   <br> 
   <br>
-  <img src="https://user-images.githubusercontent.com/88077417/167291124-7abcc4a8-913e-4ee2-85f0-1a0bf830daba.png"/>
+  <img src="https://user-images.githubusercontent.com/88077417/167291298-b1a786e2-91fc-4f58-a3ba-3e4871dd82b8.png"/>
   ---  
  <h3>Payment Page</h3>  
    <br>
